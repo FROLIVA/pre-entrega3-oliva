@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Divisas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Divisas</h1>
+        
+        <div class="formulario">
+            <label for="monto">Monto en pesos argentinos:</label>
+            <input type="number" id="monto" placeholder="Ingrese el monto">
+            
+            <label for="divisa">Convertir a:</label>
+            <select id="divisa">
+                <option value="USD">Dólar estadounidense (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Libra esterlina (GBP)</option>
+                <option value="BRL">Real brasileño (BRL)</option>
+            </select>
+            
+            <button id="calcular">Calcular</button>
+        </div>
+
+        <div id="historial">
+            <h2>Historial de Cotizaciones</h2>
+            <ul id="lista-cotizaciones"></ul>
+            <button id="borrar-historial">Borrar Historial</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
